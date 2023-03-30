@@ -18,3 +18,14 @@ print('Задача 7. Хватит ли зарплаты')
 # Введите траты на еду: 5000
 # Часов не хватает. Придётся работать больше!
 
+hours = int(input("Enter hours amount: "))
+credit = int(input("Enter credit amount left: "))
+food = int(input("Enter food money: "))
+
+salary = (200 * hours) / (2 ** 3 + hours)
+print("Your salary is:", salary)
+
+if salary >= credit + food:
+    print("Everything is ok. You may rest")
+else:
+    print("You have to work N. The sun is too high")

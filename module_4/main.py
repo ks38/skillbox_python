@@ -8,4 +8,6 @@
 # import module_4.tasks.task_3
 # import module_4.tasks.task_4
 # import module_4.tasks.task_5
-import module_4.tasks.task_6
+# import module_4.tasks.task_6
+# import module_4.tasks.task_7
+import module_4.tasks.task_8
