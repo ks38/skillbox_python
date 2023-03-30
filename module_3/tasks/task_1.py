@@ -18,4 +18,3 @@ d = 18
 numerator = (-3 + a**2) * b - 2**3
 denumerator = c - 2 * d
 print(numerator / denumerator)
-
