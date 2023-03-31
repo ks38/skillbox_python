@@ -8,10 +8,12 @@ print('Задача 8. Максимальное число (по желанию)
 number_first = int(input("Enter first number "))
 number_second = int(input("Enter second number "))
 number_third = int(input("Enter third number "))
+
 max = number_first
 
-if number_second > max and number_second > number_third:
+if number_second > max:
     max = number_second
-elif number_third > max and number_third > number_second:
+
+if number_third > max:
     max = number_third
 print("max = ", max)
