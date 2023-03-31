@@ -9,6 +9,7 @@ number_first = int(input("Enter first number "))
 number_second = int(input("Enter second number "))
 number_third = int(input("Enter third number "))
 
+# TODO: не стоит затенять системные имена, например, max, min, time, sum
 max = number_first
 
 if number_second > max:
