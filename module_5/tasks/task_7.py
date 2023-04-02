@@ -24,10 +24,23 @@ hour = int(input("Enter an hour [0-23]: "))
 
 if 0 <= hour <= 23:
     if 8 <= hour <= 22:
-        if 14 <= hour <= 15 or 10 <= hour <= 12 or 18 <= hour <= 20:
+        if 10 <= hour < 12 or 14 <= hour <= 15 or 18 <= hour < 20:
             print("Closed!!")
         else:
             print("Open!")
+    else:
+        print("We're closed")
+else:
+    print("You should enter 0-23")
+
+print("variant 2")
+
+if 0 <= hour <= 23:
+    if 8 <= hour <= 22:
+        if hour < 10 or 12 <= hour < 14 or 15 < hour < 18:
+            print("Open!")
+        else:
+            print("Closed!")
     else:
         print("We're closed")
 else:
