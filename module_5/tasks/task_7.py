@@ -19,3 +19,16 @@ print('Задача 7. Почта')
 
 # второй — при выполнении условия выводится сообщение:
 # «Посылку получить нельзя».
+
+hour = int(input("Enter an hour [0-23]: "))
+
+if 0 <= hour <= 23:
+    if 8 <= hour <= 22:
+        if 14 <= hour <= 15 or 10 <= hour <= 12 or 18 <= hour <= 20:
+            print("Closed!!")
+        else:
+            print("Open!")
+    else:
+        print("We're closed")
+else:
+    print("You should enter 0-23")
