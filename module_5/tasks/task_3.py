@@ -36,7 +36,5 @@ if 0 < student_place <= 10:
         print("And you will gain scholarship")
     else:
         print("But you're not too smart for scholarship")
-elif student_place > 10:
-    print("Sorry, you're looser")
 else:
-    print("error!")
+    print("Sorry, you're looser")

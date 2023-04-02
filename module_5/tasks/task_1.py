@@ -18,9 +18,7 @@ print('Задача 1. Калькулятор опыта')
 level = 1
 gained_experience = int(input("Enter exp amount: "))
 
-if gained_experience < 0:
-    print("Error")
-elif gained_experience < 1000:
+if gained_experience < 1000:
     print("LVL:", level)
 elif gained_experience < 2500:
     level += 1
