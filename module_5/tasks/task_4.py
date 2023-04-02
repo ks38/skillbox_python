@@ -7,9 +7,9 @@ print('Задача 4. Опять двойка')
 rating = int(input('Что получил по математике? '))
 
 if 1 < rating <= 5:
-    if rating == 2 or rating == 3:
+    if rating == 2 or rating == 3 and (rating != 4 or rating != 5):
         print('Плохо. Марш учиться!')
-    elif rating == 4 or rating == 5:
+    else:
         print('Молодец! Можешь отдохнуть.')
 else:
     print("error")
