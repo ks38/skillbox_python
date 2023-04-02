@@ -25,3 +25,18 @@ print('Задача 3. Поступление')
 # Пример 3:
 # Введите место в списке поступающих: 11
 # К сожалению, вы не поступили.
+
+points_to_scholarship = 290
+student_place = int(input("Enter place in list: "))
+
+if 0 < student_place <= 10:
+    student_points = int(input("Enter student's points: "))
+    print("You're smart ass :)")
+    if student_points >= 290:
+        print("And you will gain scholarship")
+    else:
+        print("But you're not too smart for scholarship")
+elif student_place > 10:
+    print("Sorry, you're looser")
+else:
+    print("error!")

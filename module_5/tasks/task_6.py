@@ -16,3 +16,14 @@ print('Задача 6. Новоселье')
 # Напишите программу,
 # которая получает на вход стоимость квартиры и её площадь
 # и выводит сообщение о том, подходит она или нет
+
+apartment_cost = int(input("Enter apartment's price: "))
+apartment_area = int(input("Enter apartment's area: "))
+
+if apartment_area > 0 and apartment_cost > 0:
+    if apartment_area >= 100 and apartment_cost <= 10_000_000 or apartment_area >= 80 and apartment_cost <= 7_000_000:
+        print("Yes!")
+    else:
+        print("No!")
+else:
+    print("error")
