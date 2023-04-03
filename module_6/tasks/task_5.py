@@ -47,3 +47,26 @@ print('Задача 5. Обычный день на работе')
 
 # Рабочий день закончился. Всего выполнено задач: 21
 # Нужно зайти в магазин
+
+day_time = 0
+tasks_count = 0
+task_in_raw = 0
+max_tasks = 5
+is_need_shop = False
+
+print("8-hour day time has began")
+
+while day_time < 8:
+    day_time += 1
+    print(day_time, "hour starts")
+    tasks_count += 1
+    task_in_raw += tasks_count
+    print("How much tasks Maxim will finished:", tasks_count)
+    if tasks_count >= max_tasks:
+        tasks_count = 0
+    wife_calls = int(input("Wife is calling. Answer? (1- yes, 0 - no) "))
+    if wife_calls == 1:
+        is_need_shop = True
+print("Workday os over, tasks done:", task_in_raw)
+if is_need_shop:
+    print("You need to go to the shop")
