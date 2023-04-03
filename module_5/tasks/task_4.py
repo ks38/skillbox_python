@@ -6,6 +6,7 @@ print('Задача 4. Опять двойка')
 
 rating = int(input('Что получил по математике? '))
 
+# if rating < 4:
 if rating == 2 or rating == 3:
     print('Плохо. Марш учиться!')
 else:
