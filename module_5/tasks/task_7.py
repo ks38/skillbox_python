@@ -22,20 +22,14 @@ print('Задача 7. Почта')
 
 hour = int(input("Enter an hour [0-23]: "))
 
-if 8 <= hour <= 22:
-    if 10 <= hour < 12 or 14 <= hour <= 15 or 18 <= hour < 20:
-        print("Closed!!")
-    else:
-        print("Open!")
+if hour < 8 or 10 <= hour < 12 or 14 <= hour < 15 or 18 <= hour < 20 or hour >= 22:
+    print("нихт посылкен!!!")
 else:
-    print("We're closed")
+    print("ja-ja посылкен полючить!")
 
-print("\nvariant 2\n")
+print("variant 2")
 
-if 8 <= hour <= 22:
-    if hour < 10 or 12 <= hour < 14 or 15 < hour < 18:
-        print("Closed!!")
-    else:
-        print("Open!")
+if 8 <= hour < 10 or 12 <= hour < 14 or 15 <= hour < 18 or 19 <= hour < 22:
+    print("ja-ja посылкен полючить!")
 else:
-    print("We're closed")
+    print("нихт посылкен!!!")

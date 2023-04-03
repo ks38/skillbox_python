@@ -24,10 +24,10 @@ x = int(input("Enter x: "))
 
 if x == 0:
     y = 5
-    print("x =", x, "y =", y)
+    print("y =", y)
 elif x > 0:
     y = x - 12
-    print("x =", x, "y =", y)
+    print("y =", y)
 else:
     y = x ** 2
-    print("x =", x, "y =", y)
+    print("y =", y)

@@ -19,15 +19,11 @@ level = 1
 gained_experience = int(input("Enter exp amount: "))
 
 if gained_experience < 1000:
-    print("LVL:", level)
+    level = 1
 elif gained_experience < 2500:
-    level += 1
-    print("LVL:", level)
+    level = 2
 elif gained_experience < 5000:
-    level += 2
-    print("LVL:", level)
-elif gained_experience >= 5000:
-    level += 3
-    print("LVL:", level)
+    level = 3
 else:
-    print("You can't level up more")
+    level = 4
+print("Your level is", level)
