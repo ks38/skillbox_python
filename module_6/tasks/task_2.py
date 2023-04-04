@@ -19,17 +19,11 @@ print('Задача 2. Коллекторы')
 
 owe_name = input("Enter your name: ")
 debt = int(input("Enter debt: "))
-
 print(owe_name, "Your debt is", debt)
 
 pay = int(input("Enter money amount you want to pay for debt: "))
 
-if debt >= pay:
-    while debt >= pay:
-        print(owe_name, "It is not enough to pay debt")
-        pay = int(input("Enter money amount you want to pay for debt: "))
-        if pay >= debt:
-            print(owe_name, "thanks, you're free now")
-            break
-else:
-    print("Well done!")
+while debt > pay:
+    print(owe_name, "It is not enough to pay debt")
+    pay = int(input("Enter money amount you want to pay for debt: "))
+print(owe_name, "well done!")
