@@ -19,16 +19,20 @@ print('Задача 4. Поставьте оценку!')
 # Кол-во положительных чисел: 1
 # Кол-во отрицательных чисел: 2
 
-number = int(input("Enter number: "))
+number = int(input("Enter number between -100 and 100: "))
 
 positive_counter = 0
 negative_counter = 0
 
-while number != 0:
-    if number > 0:
+while True:
+    if 0 < number <= 100:
         positive_counter += 1
-    else:
+    elif -100 <= number < 0:
         negative_counter += 1
+    elif number == 0:
+        break
+    else:
+        print("Number has to be from -100 to 100")
     number = int(input("Enter number: "))
 
 print("Positive:", positive_counter)
