@@ -60,5 +60,6 @@ while day_time < SHIFT_TIME:
     tasks_count += int(input("How much tasks Maxim has to do: "))
     wife_calls += int(input("Wife is calling. Answer? (1- yes, 0 - no) "))
 print("Workday os over, tasks done:", tasks_count)
-if wife_calls >= 1:
+# if wife_calls >= 1:
+if wife_calls:
     print("And you must go to the shop!")
