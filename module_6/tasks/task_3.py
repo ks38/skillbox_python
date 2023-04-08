@@ -16,7 +16,10 @@ print('Задача 3. Слишком большие числа')
 number = int(input("Enter number: "))
 counter = 0
 
-number = 1 if number == 0 else number
+# многабукафф number = 1 if number == 0 else number
+
+if number == 0:
+    counter = 1
 
 while number != 0:
     counter += 1
