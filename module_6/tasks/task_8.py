@@ -20,7 +20,7 @@ print('Задача 8. Игра «Компьютер угадывает числ
 guessed_number = int(input("Enter number, boy: "))
 
 left_border = 1
-right_border = 100
+right_border = 101
 tries = 0
 
 while True:

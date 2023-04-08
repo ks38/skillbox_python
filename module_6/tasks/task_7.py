@@ -18,15 +18,16 @@ print('Задача 7. Игра «Угадай число»')
 # Введите число: 7
 # Вы угадали! Число попыток: 4
 
-guessed_number = 77
-number = int(input("Enter number: "))
+guessed_number = int(input("Enter number: "))
 guess_count = 0
 
-while guessed_number != number:
+while True:
     number = int(input("Enter number: "))
     guess_count += 1
-    if number > guessed_number:
-        print("your number is more. Try again!")
-    else:
+    if number == guessed_number:
+        break
+    elif number < guessed_number:
         print("your number is less. Try again!")
+    else:
+        print("your number is more. Try again!")
 print("You win! Attempts count =", guess_count)
