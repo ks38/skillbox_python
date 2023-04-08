@@ -22,7 +22,7 @@ guessed_number = int(input("Enter number: "))
 guess_count = 0
 
 while True:
-    number = int(input("Enter number: "))
+    # number = int(input("Enter number: "))
     guess_count += 1
     if number == guessed_number:
         break
@@ -30,4 +30,7 @@ while True:
         print("your number is less. Try again!")
     else:
         print("your number is more. Try again!")
+    
+    number = int(input("Enter number: ")) # here, please, sir
+    
 print("You win! Attempts count =", guess_count)
