@@ -6,3 +6,10 @@ print('Задача 2. Посчитай чужую зарплату...')
 # Напишите программу,
 # которая принимает от пользователя зарплату сотрудника за каждый из 12 месяцев
 # и выводит на экран среднюю зарплату за год.
+
+salary = 0
+MONTHS_AMOUNT = 12
+
+for months in range(MONTHS_AMOUNT):
+    salary += int(input("Enter salary "))
+print(salary // MONTHS_AMOUNT)

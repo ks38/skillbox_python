@@ -7,3 +7,11 @@ print('Задача 1. Должники')
 
 # Напишите программу, которая при вводе десяти чисел определяет, сколько из них являются одновременно чётными и
 # положительными.
+
+count = 0
+
+for _ in range(10):
+    number = int(input("Enter number: "))
+    if number % 2 == 0 and number > 0:
+        count += 1
+print(count, "assholes")
