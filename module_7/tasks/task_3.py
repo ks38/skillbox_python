@@ -22,4 +22,5 @@ if fact <= 1:
 
 for number in range(1, fact):
     fact *= number
+
 print(fact)

@@ -21,9 +21,11 @@ cards_amount = int(input("Enter cards amount: "))
 card = 0
 difference = 0
 
+cards_summ = (cards_amount + 1) * cards_amount // 2
+
 for cards in range(1, cards_amount):
     card += int(input("Enter card number: "))
-    difference += cards
 
-missing_card = difference + cards_amount - card
+missing_card = cards_summ - card
+
 print("Missing card is", missing_card)

@@ -12,4 +12,7 @@ MONTHS_AMOUNT = 12
 
 for months in range(MONTHS_AMOUNT):
     salary += int(input("Enter salary "))
-print(salary // MONTHS_AMOUNT)
+
+middle_salary = salary / MONTHS_AMOUNT
+
+print(middle_salary)

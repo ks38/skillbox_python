@@ -12,5 +12,7 @@ START = 10
 STOP = 100
 
 for number in range(START, STOP):
-    if number == number // 10 * number % 10 * 3:
+    triple_multiply_digits = (number // 10) * (number % 10) * 3
+
+    if number == triple_multiply_digits:
         print("Yes", number)

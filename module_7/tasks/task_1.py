@@ -14,4 +14,5 @@ for _ in range(10):
     number = int(input("Enter number: "))
     if number % 2 == 0 and number > 0:
         count += 1
+
 print(count, "assholes")
