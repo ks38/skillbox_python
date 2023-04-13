@@ -10,7 +10,7 @@ print('Задача 2. Посчитай чужую зарплату...')
 salary = 0
 MONTHS_AMOUNT = 12
 
-for months in range(MONTHS_AMOUNT):
+for _ in range(MONTHS_AMOUNT):
     salary += int(input("Enter salary "))
 
 middle_salary = salary / MONTHS_AMOUNT

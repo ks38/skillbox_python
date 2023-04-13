@@ -27,7 +27,7 @@ for student_number in range(1, students + 1):
 
 if stupid > middle and stupid > smart:
     print("Today is a stupids day")
-elif smart > stupid and smart > middle:
+elif smart > middle:
     print("Today is a smart day")
 else:
     print("Today is a middle day")
